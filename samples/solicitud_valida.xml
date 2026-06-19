@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solicitud>
+  <codigo_estudiante>2026001</codigo_estudiante>
+  <nombre_estudiante>Mateo López García</nombre_estudiante>
+  <correo>mateo.lopez@cecar.edu.co</correo>
+  <programa_codigo>SIS</programa_codigo>
+  <asignatura>Arquitectura de Software</asignatura>
+  <tipo_solicitud>ASESORIA_ACADEMICA</tipo_solicitud>
+  <descripcion>Solicitud de asesoría sobre transformación XML a JSON.</descripcion>
+  <estado>RECIBIDA</estado>
+  <fecha_solicitud>2026-06-17</fecha_solicitud>
+</solicitud>

@@ -1,0 +1,11 @@
+{
+  "codigo_estudiante": "2026002",
+  "nombre_estudiante": "Juliana Pérez",
+  "correo": "juliana.perez@cecar.edu.co",
+  "programa_codigo": "SIS",
+  "asignatura": "Bases de Datos",
+  "tipo_solicitud": "TUTORIA",
+  "descripcion": "Necesito apoyo para entender PostgreSQL y Neon.",
+  "estado": "RECIBIDA",
+  "fecha_solicitud": "2026-06-17"
+}

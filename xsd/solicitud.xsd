@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="solicitud">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="codigo_estudiante" type="xs:string"/>
+        <xs:element name="nombre_estudiante" type="xs:string"/>
+        <xs:element name="correo" type="xs:string"/>
+        <xs:element name="programa_codigo" type="xs:string"/>
+        <xs:element name="asignatura" type="xs:string"/>
+        <xs:element name="tipo_solicitud" type="xs:string"/>
+        <xs:element name="descripcion" type="xs:string" minOccurs="0"/>
+        <xs:element name="estado" type="xs:string"/>
+        <xs:element name="fecha_solicitud" type="xs:date"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

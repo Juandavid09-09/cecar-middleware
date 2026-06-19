@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<solicitud>
+  <codigo_estudiante></codigo_estudiante>
+  <nombre_estudiante>Estudiante Prueba</nombre_estudiante>
+  <correo>correo.personal@gmail.com</correo>
+  <programa_codigo>XXX</programa_codigo>
+  <asignatura>Arquitectura de Software</asignatura>
+  <tipo_solicitud>NO_EXISTE</tipo_solicitud>
+  <descripcion>Datos con errores para probar calidad.</descripcion>
+  <estado>MAL_ESTADO</estado>
+  <fecha_solicitud>2035-01-01</fecha_solicitud>
+</solicitud>

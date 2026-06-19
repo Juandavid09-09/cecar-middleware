@@ -1,0 +1,75 @@
+### Cambia estas URLs por las URLs reales de Render
+@middleware = https://cecar-middleware.onrender.com
+@mock = https://cecar-sistemas-externos.onrender.com
+
+### Health del middleware
+GET {{middleware}}/health
+
+### Health sistemas externos
+GET {{mock}}/health
+
+### Inicializar base de datos en Neon
+POST {{middleware}}/api/init-db
+
+### Enviar solicitud JSON válida
+POST {{middleware}}/api/solicitudes/json
+Content-Type: application/json
+
+{
+  "codigo_estudiante": "2026002",
+  "nombre_estudiante": "Juliana Pérez",
+  "correo": "juliana.perez@cecar.edu.co",
+  "programa_codigo": "SIS",
+  "asignatura": "Bases de Datos",
+  "tipo_solicitud": "TUTORIA",
+  "descripcion": "Necesito apoyo para entender PostgreSQL y Neon.",
+  "estado": "RECIBIDA",
+  "fecha_solicitud": "2026-06-17"
+}
+
+### Enviar solicitud JSON inválida
+POST {{middleware}}/api/solicitudes/json
+Content-Type: application/json
+
+{
+  "codigo_estudiante": "",
+  "nombre_estudiante": "Estudiante Prueba",
+  "correo": "correo@gmail.com",
+  "programa_codigo": "XXX",
+  "asignatura": "Arquitectura de Software",
+  "tipo_solicitud": "NO_EXISTE",
+  "descripcion": "Solicitud con errores para probar reglas de calidad.",
+  "estado": "MAL_ESTADO",
+  "fecha_solicitud": "2035-01-01"
+}
+
+### Transformar JSON a XML
+POST {{middleware}}/api/transform/json-to-xml
+Content-Type: application/json
+
+{
+  "codigo_estudiante": "2026004",
+  "nombre_estudiante": "Pedro Martínez",
+  "correo": "pedro.martinez@cecar.edu.co",
+  "programa_codigo": "SIS",
+  "asignatura": "Integración de Sistemas",
+  "tipo_solicitud": "ASESORIA_ACADEMICA",
+  "descripcion": "Prueba de transformación JSON a XML.",
+  "estado": "RECIBIDA",
+  "fecha_solicitud": "2026-06-17"
+}
+
+### Listar solicitudes
+GET {{middleware}}/api/solicitudes
+
+### Listar errores de calidad
+GET {{middleware}}/api/errores
+
+### Listar eventos
+GET {{middleware}}/api/eventos
+
+### Consultar sistema académico XML simulado
+GET {{mock}}/sistema-academico/estudiantes/2026001
+
+### Consultar tutorías JSON simulado
+GET {{mock}}/sistema-tutorias/tutores?programa=SIS
